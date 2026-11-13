@@ -424,6 +424,27 @@ body.lyrics-open{overflow:hidden}
 .home-small-card .arrow{top:12px;right:13px}
 .card.home-small-card{border-color:rgba(255,255,255,.14)}
 @media(max-width:780px){.home-small-card{min-height:66px!important;padding:11px 14px}.instagram-feature{padding:11px 12px}}
+
+/* Editorial link treatment: YouTube + Texter */
+.home-grid .home-small-card[data-target="YOUTUBE-dd"],
+.home-grid .home-small-card.text-card {
+  min-height:58px !important;height:auto !important;
+  padding:11px 15px !important;
+  background:transparent !important;
+  border:0 !important;border-top:1px solid rgba(242,238,231,.30) !important;
+  border-radius:0 !important;box-shadow:none !important;
+  backdrop-filter:none !important;
+  display:flex !important;align-items:center;gap:12px;position:relative;
+  transition:background .2s ease,border-color .2s ease;
+}
+.home-grid .home-small-card[data-target="YOUTUBE-dd"]:hover,
+.home-grid .home-small-card.text-card:hover {background:rgba(242,238,231,.065) !important;border-top-color:#c7a67b !important}
+.home-grid .home-small-card .kicker {font-size:10px !important;letter-spacing:.14em;margin:0 !important;white-space:nowrap;opacity:.65}
+.home-grid .home-small-card h2 {font-size:clamp(16px,1.6vw,23px) !important;letter-spacing:.08em;margin:0 !important;line-height:1.2 !important}
+.home-grid .home-small-card .arrow {order:3;position:static !important;margin-left:auto !important;transform:none !important;font-size:21px !important;opacity:.7}
+@media(max-width:780px){
+ .home-grid .home-small-card[data-target="YOUTUBE-dd"],.home-grid .home-small-card.text-card{min-height:54px !important;padding:12px 10px !important}
+}
 </style>
 </head>
 <body>
